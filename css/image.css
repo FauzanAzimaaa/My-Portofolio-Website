@@ -1,0 +1,20 @@
+.images{
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    width: 100%;
+    height: fit-content;
+}
+
+#ui-design{
+    background-image: url('../assets/UI-design.png');
+}
+
+#mobile-dev{
+    background-image: url('../assets/indoquest-cover.jpg');
+}
+
+#data-analyst{
+    background-image: url('../assets/vending-machine-dashboard.jpg');
+}

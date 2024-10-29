@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fauzan's Portofolio</title>
+    
+    <!-- Tailwind css -->
+    <link href="../src/output.css" rel="stylesheet">
+
+    <!-- Link to favicon -->
+    <link rel="icon" href="../assets/favicon.png" type="image/x-icon">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="../css/typing.css">
+    <link rel="stylesheet" href="../css/rain.css">
+    <link rel="stylesheet" href="..//css/slider.css">
+    <link rel="stylesheet" href="..//css/image.css">
+
+    <!-- Tailwind JS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body id="mainBody" class="bg-customGrey2 flex justify-center w-full h-screen pb-6">
+
+    <div class="rain-l">
+        <span style="--i:11"></span>
+        <span style="--i:12"></span>
+        <span style="--i:10"></span>
+        <span style="--i:14"></span>
+        <span style="--i:18"></span>
+        <span style="--i:16"></span>
+        <span style="--i:19"></span>
+        <span style="--i:20"></span>
+        <span style="--i:19"></span>
+        <span style="--i:10"></span>
+        <span style="--i:16"></span>
+    </div>
+
+    <div class="rain-r">
+        <span style="--i:11"></span>
+        <span style="--i:12"></span>
+        <span style="--i:10"></span>
+        <span style="--i:14"></span>
+        <span style="--i:18"></span>
+        <span style="--i:16"></span>
+        <span style="--i:19"></span>
+        <span style="--i:20"></span>
+        <span style="--i:19"></span>
+        <span style="--i:10"></span>
+        <span style="--i:16"></span>
+    </div>
+
+    <div class="body-content bg-white min-h-fit w-full lg:w-4/5 border-x border-customGrey rounded-3xl mt-0 lg:mt-3 relative z-50">
+        <!-- Header Section -->
+        <header id="stickyNavbar" class="flex justify-end xl:justify-between items-center mt-6 font-medium px-4 lg:px-20 h-16 sticky top-3">
+            <div class="p-4 w-16 bg-transparent">
+                
+            </div>
+
+            <nav class="py-5 px-10 w-fit border border-customGrey rounded-full shadow-md xl:hidden flex justify-end">
+                <button id="openModal" class="transition duration-200 ease-in text-gray-500 hover:text-gray-950 min-w-fit flex items-center" href="">
+                    Menu 
+                    <svg class="w-3 ml-1 h-fit" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z" fill="currentColor"/>
+                    </svg>
+                </button>
+            </nav>
+
+            <div id="popupModal" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-center items-center hidden z-50">
+                <div class="bg-white p-6 rounded-lg shadow-lg w-11/12 lg:w-6/12 flex flex-col">
+                    <div class="flex flex-row justify-between">
+                        <h2 class="text-xl font-semibold mb-4">Navigation</h2>
+                        <button id="closeModal" class="bg-red-500 text-white w-7 h-7 flex justify-center items-center rounded-md">x</button>
+                    </div>
+                    <div class="flex flex-col">
+                        <a class="transition duration-200 ease-in text-gray-500 hover:text-gray-950" href="#home">Home</a>
+                        <a class="transition duration-200 ease-in text-gray-500 hover:text-gray-950" href="#about-me">About</a>
+                        <a class="transition duration-200 ease-in text-gray-500 hover:text-gray-950" href="#projects">Projects</a>
+                        <a class="transition duration-200 ease-in text-gray-500 hover:text-gray-950" href="#tools">Tools</a>
+                        <a class="transition duration-200 ease-in text-gray-500 hover:text-gray-950" href="#contact">Contact</a>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="py-5 px-10 w-2/5 border border-customGrey justify-between rounded-full shadow-md text-gray-500 hidden xl:flex">
+                <a class="transition duration-200 ease-in hover:text-gray-950" href="#home">Home</a>
+                <a class="transition duration-200 ease-in hover:text-gray-950" href="#about-me">About</a>
+                <a class="transition duration-200 ease-in hover:text-gray-950" href="#projects">Projects</a>
+                <a class="transition duration-200 ease-in hover:text-gray-950" href="#tools">Tools</a>
+                <a class="transition duration-200 ease-in hover:text-gray-950" href="#contact">Contact</a>
+            </nav>
+
+            <div class="p-4 border rounded-full shadow-md h-16 hidden lg:flex justify-between items-center ml-2 xl:ml-0">
+                <button id="toggleNightMode" href=""><img src="../assets/sun.svg" alt="Sun icon" class="w-8"></button>
+            </div>
+        </header>
+
+        <!-- Home Section -->
+        <section id="home" class="flex xl:flex-row flex-col py-10 px-4 lg:px-20 z-0">
+            <div class="w-full xl:w-1/2 xl:order-1 order-2">
+                <h1 class="typewriter text-5xl font-bold text-gray-900 mb-6 text-wrap lg:text-nowrap">
+                    Haloo! <br>
+                    I'm Fauzan Azima
+                </h1>
+                <p class="mt-4 animate-fadeIn leading-loose text-gray-700 text-lg">
+                    An enthusiastic individual in Software Development and Data, with experience from multiple projects in these areas, always eager to learn and applying skills effectively.
+                </p>
+                <div class="flex ">
+                    <img src="" alt="">
+                </div>
+                <div class="h-10 w-fit flex mt-4">
+                    <a href="https://www.instagram.com/fauzan.azimaa/" class="mr-5" target="_blank">
+                        <svg class="w-7 text-gray-500 hover:text-gray-800 transition duration-200 ease-in-out" viewBox="0 0 2500 2500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_333_251)">
+                            <path d="M833.401 1250C833.401 1019.89 1019.89 833.3 1250 833.3C1480.11 833.3 1666.7 1019.89 1666.7 1250C1666.7 1480.11 1480.11 1666.7 1250 1666.7C1019.89 1666.7 833.401 1480.11 833.401 1250ZM608.138 1250C608.138 1604.5 895.497 1891.86 1250 1891.86C1604.5 1891.86 1891.86 1604.5 1891.86 1250C1891.86 895.497 1604.5 608.138 1250 608.138C895.497 608.138 608.138 895.497 608.138 1250ZM1767.27 582.694C1767.27 665.489 1834.41 732.734 1917.31 732.734C2000.1 732.734 2067.35 665.489 2067.35 582.694C2067.35 499.899 2000.2 432.754 1917.31 432.754C1834.41 432.754 1767.27 499.899 1767.27 582.694ZM744.952 2267.47C623.082 2261.91 556.846 2241.62 512.823 2224.45C454.463 2201.74 412.863 2174.68 369.043 2130.96C325.323 2087.24 298.162 2045.64 275.545 1987.28C258.38 1943.26 238.086 1877.02 232.532 1755.15C226.474 1623.38 225.263 1583.8 225.263 1250C225.263 916.195 226.575 876.716 232.532 744.851C238.086 622.981 258.481 556.846 275.545 512.722C298.263 454.362 325.323 412.763 369.043 368.942C412.763 325.222 454.362 298.061 512.823 275.444C556.846 258.279 623.082 237.985 744.952 232.431C876.716 226.373 916.296 225.162 1250 225.162C1583.8 225.162 1623.28 226.474 1755.15 232.431C1877.02 237.985 1943.15 258.38 1987.28 275.444C2045.64 298.061 2087.24 325.222 2131.06 368.942C2174.78 412.662 2201.84 454.362 2224.56 512.722C2241.72 556.745 2262.02 622.981 2267.57 744.851C2273.63 876.716 2274.84 916.195 2274.84 1250C2274.84 1583.7 2273.63 1623.28 2267.57 1755.15C2262.02 1877.02 2241.62 1943.26 2224.56 1987.28C2201.84 2045.64 2174.78 2087.24 2131.06 2130.96C2087.34 2174.68 2045.64 2201.74 1987.28 2224.45C1943.26 2241.62 1877.02 2261.91 1755.15 2267.47C1623.38 2273.53 1583.8 2274.74 1250 2274.74C916.296 2274.74 876.716 2273.53 744.952 2267.47ZM734.653 7.5727C601.575 13.6309 510.703 34.7334 431.24 65.63C349.051 97.5363 279.382 140.347 209.814 209.814C140.347 279.281 97.5363 348.95 65.63 431.24C34.7334 510.703 13.6309 601.575 7.5727 734.653C1.41357 867.932 0 910.541 0 1250C0 1589.46 1.41357 1632.07 7.5727 1765.35C13.6309 1898.42 34.7334 1989.3 65.63 2068.76C97.5363 2150.95 140.246 2220.72 209.814 2290.19C279.281 2359.65 348.95 2402.36 431.24 2434.37C510.804 2465.27 601.575 2486.37 734.653 2492.43C868.033 2498.49 910.541 2500 1250 2500C1589.56 2500 1632.07 2498.59 1765.35 2492.43C1898.42 2486.37 1989.3 2465.27 2068.76 2434.37C2150.95 2402.36 2220.62 2359.65 2290.19 2290.19C2359.65 2220.72 2402.36 2150.95 2434.37 2068.76C2465.27 1989.3 2486.47 1898.42 2492.43 1765.35C2498.49 1631.97 2499.9 1589.46 2499.9 1250C2499.9 910.541 2498.49 867.932 2492.43 734.653C2486.37 601.575 2465.27 510.703 2434.37 431.24C2402.36 349.051 2359.65 279.382 2290.19 209.814C2220.72 140.347 2150.95 97.5363 2068.86 65.63C1989.3 34.7334 1898.42 13.5299 1765.45 7.5727C1632.17 1.51454 1589.56 0 1250.1 0C910.541 0 868.033 1.41357 734.653 7.5727Z" fill="currentColor"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_333_251">
+                            <rect width="2500" height="2500" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/fauzan-azimaa" class="mr-5" target="_blank">
+                        <svg class="w-7 text-gray-500 hover:text-gray-800 transition duration-200 ease-in-out" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_333_246)">
+                            <path d="M435.2 0H76.8C34.3845 0 0 34.3845 0 76.8V435.2C0 477.615 34.3845 512 76.8 512H435.2C477.615 512 512 477.615 512 435.2V76.8C512 34.3845 477.615 0 435.2 0Z" fill="currentColor"/>
+                            <path d="M142 175C162.435 175 179 158.435 179 138C179 117.565 162.435 101 142 101C121.565 101 105 117.565 105 138C105 158.435 121.565 175 142 175Z" fill="white"/>
+                            <path d="M244 194V392ZM142 194V392Z" fill="#EBEBEB"/>
+                            <path d="M244 194V392M142 194V392" stroke="white" stroke-width="66"/>
+                            <path d="M276 282C276 262 289 242 312 242C336 242 345 260 345 287V392H411V279C411 218 379 190 335 190C301 190 284 209 276 222" fill="white"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_333_246">
+                            <rect width="512" height="512" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>                        
+                    </a>
+                    <a href="https://github.com/FauzanAzimaaa" target="_blank">
+                        <svg class="w-7 text-gray-500 hover:text-gray-800 transition duration-200 ease-in-out" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        </defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="currentColor">
+                                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                                        <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div id="imageContainer" class="w-full xl:w-1/2 flex justify-center align-middle relative overflow-hidden p-4 ml-4 xl:order-1 order-1 mb-10" style="height: 300px;">
+                <div class="absolute p-2 right-7 top-0 shadow-xl bg-gray-700 text-white rounded-t-xl rounded-br-xl flex">
+                    <h2 class="font-semibold mr-1 text-xs lg:text-sm">Hi, I'm Fauzan</h2>
+                    <img class="w-4" src="../assets/hand-waving (1).svg" >
+                </div>
+                <img src="/assets/foto-1.png" class="object-cover absolute my-images z-0" alt="Image 1" width="400">
+                <img src="/assets/foto-2.png" class="object-cover absolute hidden my-images z-0" alt="Image 2" width="400">
+            </div>
+        </section>
+
+        <!-- About Me -->
+        <section id="about-me" class="px-12 lg:px-20 py-8 bg-gray-900 text-white flex flex-col md:flex-row drop-shadow-md w-full">
+            <div class="w-full md:w-1/4 flex items-center justify-center">
+                <div>
+                    <h2 class="font-normal animate-fadeIn">About Me, Fauzan Azima</h2>
+                    <h1 class="md:mt-2 md:ml-4 text-2xl font-bold animate-fadeIn mb-8 md:mb-0">
+                        Short story about me <br class="hidden md:block">
+                        and the begining of <br class="hidden md:block">
+                        my journey
+                    </h1>
+                </div>
+            </div>
+            <div class="w-full md:w-3/4 md:pl-12">
+                <p class="mb-4 font-medium animate-fadeIn">
+                    Hello, my name is Fauzan Azima, but I usually go by Ajik or Fauzan. I’m from Mataram, Lombok, located in West Nusa Tenggara.
+                </p>
+
+                <p class="mb-4 font-medium animate-fadeIn">
+                    I am currently pursuing a Bachelor's degree in Informatics Engineering at the University of Mataram, with a GPA of 3.77. I have a deep passion for Data Analysist and Software Engineering.
+                </p>
+
+                <p class="font-medium animate-fadeIn">
+                    Throughout my academic journey, I've had the opportunity to explore various fields, including software development, machine learning, data analysis, and UI/UX design.
+                </p>
+            </div>
+        </section>
+
+        <!-- Recent Projects -->
+        <section id="projects" class="py-12 px-6 min-h-fit bg-white border-x border-customGrey">
+            <h1 class="mt-2 ml-4 text-5xl font-bold animate-fadeIn text-center text-gray-800">
+                Projects
+            </h1>
+
+            <div class="projects-row-1 opacity-0 translate-y-12 transition-all duration-1000">
+                <div class="flex xl:flex-row flex-col mt-8 h-fit">
+                    <div class="col xl:w-1/2  w-fullh-fit py-10 xl:pr-6 xl:pl-2 order-2 xl:order-1">
+                        <h3 class="font-medium text-2xl text-gray-800">UI Design</h3>
+                        <h2 class="mt-4 text-4xl font-bold text-gray-900">
+                            Adedu
+                        </h2>
+                        <p class="mt-4 text-lg text-gray-800 leading-relaxed">
+                            Adventure Education is a mobile application designed to combine adventure game elements with classroom learning materials. It creates an interactive, educational, and enjoyable learning atmosphere, allowing students to experience a deeper and more engaging way of learning without boredom.
+                        </p>
+                    </div>
+                    <div class="col xl:w-1/2 w-full max-h-full min-h-200 order-1 xl:order-2 flex justify-center items-center">
+                        <img src="/assets/UI-design.png" alt="" class="drop-shadow-xl rounded-xl">
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-row-2 opacity-0 translate-y-12 transition-all duration-1000">
+                <div class="flex xl:flex-row flex-col mt-8 h-fit">
+                    <div class="col xl:w-1/2  w-fullh-fit py-10 xl:pl-6 xl:pr-2 order-2 xl:order-2">
+                        <h3 class="font-medium text-2xl text-gray-800">Mobile Development</h3>
+                        <h2 class="mt-4 text-4xl font-bold text-gray-900">
+                            IndoQuest
+                        </h2>
+                        <p class="mt-4 text-lg text-gray-800 leading-relaxed">
+                            A mobile application designed to help users explore various tourist destinations in Bali. This app provides recommendations for nearby attractions based on the user's location and suggests travel itineraries that are interesting and tailored to the user's preferences.
+                        </p>
+                    </div>
+                    <div class="col xl:w-1/2 w-full max-h-full min-h-200 order-1 xl:order-1 flex justify-center items-center">
+                        <img src="/assets/indoquest-cover.jpg" alt="" class="drop-shadow-xl rounded-xl">
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-row-3 opacity-0 translate-y-12 transition-all duration-1000">
+                <div class="flex xl:flex-row flex-col mt-8 h-fit">
+                    <div class="col xl:w-1/2  w-fullh-fit py-10 xl:pr-6 xl:pl-2 order-2 xl:order-1">
+                        <h3 class="font-medium text-2xl text-gray-800">Data Analysis</h3>
+                        <h2 class="mt-4 text-4xl font-bold text-gray-900">Vending Machine Sales Dashboard </h2>
+                        <p class="mt-4 text-lg text-gray-800 leading-relaxed">
+                            Dashboard displaying the distribution of vending machine sales data in the Central New Jersey area. Sales are presented based on monthly revenue per vending machine, specific locations, product categories, product variations, and the types of payment methods used.
+                        </p>
+                    </div>
+                    <div class="col xl:w-1/2 w-full max-h-full min-h-200 order-1 xl:order-2 flex justify-center items-center">
+                        <img src="/assets/vending-machine-dashboard.jpg" alt="" class="drop-shadow-xl rounded-xl">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tools i used -->
+        <section id="tools" class="py-24 sm:py-6 mb-16">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <h2 class="mb-4 text-3xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Tools i rely on</h2>
+                <div class="slider">
+                    <div class="slide-track mt-16">
+                        <div class="slide">
+                            <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="../assets/figma-ic.svg" alt="Transistor" width="250" height="100">
+                        </div>
+                        <div class="slide">
+                            <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="../assets/android-studio-ic.svg" alt="Reform" width="250" height="100">
+                        </div>
+                        <div class="slide">
+                            <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="../assets/power-bi-ic.svg" alt="Tuple" width="250" height="100">
+                        </div>
+                        <div class="slide">
+                            <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" src="../assets/vscode-ic.svg" alt="SavvyCal" width="250" height="100">
+                        </div>
+                        <div class="slide">
+                            <img class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1" src="../assets/microsoft-excel-ic.svg" alt="Statamic" width="250" height="100">
+                        </div>
+                        <div class="slide">
+                            <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="../assets/figma-ic.svg" alt="Transistor" width="250" height="100">
+                        </div>
+                        <div class="slide">
+                            <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="../assets/android-studio-ic.svg" alt="Reform" width="250" height="100">
+                        </div>
+                        <div class="slide">
+                            <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="../assets/power-bi-ic.svg" alt="Tuple" width="250" height="100">
+                        </div>
+                        <div class="slide">
+                            <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" src="../assets/vscode-ic.svg" alt="SavvyCal" width="250" height="100">
+                        </div>
+                        <div class="slide">
+                            <img class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1" src="../assets/microsoft-excel-ic.svg" alt="Statamic" width="250" height="100">
+                        </div>
+                        <div class="slide">
+                            <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="../assets/figma-ic.svg" alt="Transistor" width="250" height="100">
+                        </div>
+                        <div class="slide">
+                            <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="../assets/android-studio-ic.svg" alt="Reform" width="250" height="100">
+                        </div>
+                        <div class="slide">
+                            <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="../assets/power-bi-ic.svg" alt="Tuple" width="250" height="100">
+                        </div>
+                        <div class="slide">
+                            <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" src="../assets/vscode-ic.svg" alt="SavvyCal" width="250" height="100">
+                        </div>
+                        <div class="slide">
+                            <img class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1" src="../assets/microsoft-excel-ic.svg" alt="Statamic" width="250" height="100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact -->
+        <section id="contact" class="bg-white dark:bg-gray-900">
+            <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Send a message to get in touch</h2>
+                <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">You are welcome to send me a message to start a personal conversation. I would be glad to explore potential collaborations with you and discuss how we can work together in a mutually beneficial partnership.</p>
+                <form action="#" class="space-y-8">
+                    <div>
+                        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+                        <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="fauzan@gmail.com" required>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
+                        <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a message..."></textarea>
+                    </div>
+                    <button type="submit" class="py-3 px-5 text-sm font-medium bg-gray-600 hover:bg-gray-900  transition duration-200 ease-in-out text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="w-full p-4 bg-none mb-3 border-t rounded-b-3xl border-gray-200 md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
+            <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+                <li>
+                    <a href="#home" class="hover:underline me-4 md:me-6">Home</a>
+                </li>
+                <li>
+                    <a href="#about-me" class="hover:underline me-4 md:me-6">About</a>
+                </li>
+                <li>
+                    <a href="#projects" class="hover:underline me-4 md:me-6">Projects</a>
+                </li>
+                <li>
+                    <a href="#tools" class="hover:underline me-4 md:me-6">Tools</a>
+                </li>
+                <li>
+                    <a href="#contact" class="hover:underline">Contact</a>
+                </li>
+            </ul>
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+                © 2024 <a href="https://flowbite.com/" class="hover:underline">Fauzan Azima</a>
+            </span>
+        </footer>
+    </div>
+    
+    <!-- External JS -->
+    <script src="/javascript/nightMode.js"></script>
+    <script src="/javascript/togglePopUp.js"></script>
+    <script src="/javascript/imageChanger.js"></script>
+    <script src="/javascript/stickyNavbar.js"></script>
+    <script src="/javascript/scrollEffect.js"></script>
+</body>
+</html>

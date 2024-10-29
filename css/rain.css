@@ -1,0 +1,49 @@
+.rain-l, .rain-r{
+    position: absolute;
+    top: -20;
+    display: flex;
+    z-index: 1;
+    height: 100%;
+}
+
+.rain-l{
+    left: 0;
+}
+
+.rain-r{
+    right: 0;
+}
+
+.rain-l span, .rain-r span{
+    position: relative;
+    bottom: 10px;
+    width : 10px;
+    height: 10px;
+    background-color: black;
+    margin : 0 2px;
+    border-radius: 50%;
+    animation: animate 5s linear infinite;
+    animation-duration: calc(30s/var(--i));
+}
+
+@media screen and (min-width : 768px) {
+    .rain-l span, .rain-r span{
+        display: hidden;
+    }
+
+    .rain-l, .rain-r{
+        display: hidden;
+    }
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(0) scale(1);
+    }
+    50%{
+        transform: translateY(300vh) scale(1);
+    }
+    100%{
+        transform: translateY(368vh) scale(0);
+    }
+}
