@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const sections = document.querySelectorAll('.projects-row-1, .projects-row-2, .projects-row-3, .projects-row-4');
+    const sections = document.querySelectorAll('.projects-row-1, .projects-row-2, .projects-row-3');
     
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry, index) => {
